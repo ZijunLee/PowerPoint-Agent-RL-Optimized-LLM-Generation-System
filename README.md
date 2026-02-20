@@ -35,3 +35,17 @@ backend/
     ├── model_test.py      # Inference/Test script
     ├── content.jsonl      # Final generated content
     └── output/            # Model checkpoints
+
+# Create conda environment
+conda create -n rlppt python=3.10
+conda activate rlppt
+
+# Install dependencies
+cd backend
+pip install -r requirements.txt
+
+# Model & API Config
+ART_MODEL=Qwen/Qwen2.5-0.5B-Instruct
+DEEPSEEK_API_KEY=your-api-key
+DEEPSEEK_BASE_URL=[https://api.deepseek.com/v1/chat/completions](https://api.deepseek.com/v1/chat/completions)
+USE_DEEPSEEK_JUDGE=true
