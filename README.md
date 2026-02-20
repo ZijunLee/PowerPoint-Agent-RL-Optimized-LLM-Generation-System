@@ -25,15 +25,12 @@
 │   ├── prompt.py          # System prompts for outlines
 │   ├── train_trl.py       # GSPO training script for outlines
 │   ├── model_test.py      # Inference/Test script
-│   ├── topic.json         # Training dataset (topics)
-│   ├── outline.jsonl      # Generated outline results
 │   └── output/            # Model checkpoints
 │
 └── content/               # Phase 2: Content Generation
     ├── prompt.py          # System prompts for content
     ├── train_trl.py       # GSPO training script for content
     ├── model_test.py      # Inference/Test script
-    ├── content.jsonl      # Final generated content
     └── output/            # Model checkpoints
 
 🚀 Quick Start
