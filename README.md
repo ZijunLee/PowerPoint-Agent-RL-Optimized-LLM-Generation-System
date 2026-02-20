@@ -16,7 +16,7 @@
 ## 📁 Project Structure
 
 ```text
-backend/
+
 ├── .env                    # Environment config (API keys, model settings, etc.)
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Documentation
@@ -44,10 +44,10 @@ conda create -n rlppt python=3.10
 conda activate rlppt
 
 # Install dependencies
-cd backend
 pip install -r requirements.txt
+
 2. Configuration
-Create and edit the backend/.env file:
+Create and edit the .env file:
 
 # Model & API Config
 ART_MODEL=Qwen/Qwen2.5-0.5B-Instruct
@@ -59,7 +59,7 @@ USE_DEEPSEEK_JUDGE=true
 Phase 1: Outline Generation
 
 # 1. Start Training
-cd backend/outline
+cd outline
 python train_trl.py
 
 # 2. Run Inference Test
@@ -86,10 +86,10 @@ conda create -n rlppt python=3.10
 conda activate rlppt
 
 # 安装依赖
-cd backend
 pip install -r requirements.txt
+
 2. 配置环境变量
-编辑 backend/.env 文件，填入您的 DeepSeek API Key：
+编辑 .env 文件，填入您的 DeepSeek API Key：
 
 # 编辑 .env 文件
 nano .env  # 或者使用 VS Code 打开
@@ -98,7 +98,7 @@ nano .env  # 或者使用 VS Code 打开
 阶段一：大纲生成
 
 # 进入大纲模块执行训练
-cd backend/outline
+cd outline
 python train_trl.py
 
 # 测试生成效果
