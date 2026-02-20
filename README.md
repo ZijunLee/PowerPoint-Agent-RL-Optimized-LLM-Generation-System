@@ -72,6 +72,7 @@ python train_trl.py
 
 # 2. Run Inference Test
 python model_test.py
+
 <a name="chinese"></a>
 
 🌟 项目简介 (中文)
